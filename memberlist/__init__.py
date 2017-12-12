@@ -6,10 +6,12 @@ from flask_login import current_user
 
 
 def flaskbb_request_processors(app):
-    'Apply the login restriction'
+    'Apply the login restriction.'
 
     @app.before_request
     def before_request():
+        'Check authentication before request is handled.'
+
         if (request.endpoint in ('forum.memberlist', 'forum.search')
                 and not current_user.is_authenticated):
             return current_app.login_manager.unauthorized()
