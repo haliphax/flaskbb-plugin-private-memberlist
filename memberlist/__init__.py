@@ -7,7 +7,9 @@ from flask_login import current_user
 endpoints = (
     'forum.memberlist',
     'forum.search',
-    'forum.user',
+    'user.profile',
+    'user.view_all_topics',
+    'user.view_all_posts',
 )
 
 
