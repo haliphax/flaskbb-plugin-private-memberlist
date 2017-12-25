@@ -5,7 +5,7 @@ from setuptools import setup
 setup(
     name='flaskbb-plugin-private-memberlist',
     packages=['memberlist'],
-    version='1.1',
+    version='1.2',
     author='haliphax',
     author_email='haliphax@github.com',
     description='Require login to view the member list',
